@@ -1,0 +1,16 @@
+#
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://headquarters-parbold.co.uk/$1 [R,L]
+
+RewriteRule ^/$ index.html [L]
+RewriteRule ^team/$ team.html [L]
+RewriteRule ^price-list/$ pricelist.html [L]
+RewriteRule ^gallery/$ gallery.html [L]
+RewriteRule ^contact/$ contact.html [L]
+# Added automatically by Gridhost panel Monday 26th of August 2019 11:23:57 PM
+ErrorDocument 401 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+ErrorDocument 405 /404.html
+ErrorDocument 500 /404.html
