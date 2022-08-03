@@ -1,0 +1,786 @@
+//Mobile View
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+html{
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  margin:0;
+  background-image: url('img/background.jpg');
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: auto;
+  height: 100px;
+}
+
+.gap{
+  display: none;
+}
+
+.home{
+  width: 90%;
+  font-size: 16px;
+  text-align: justify;
+  margin-left:auto;
+  margin-right:auto;
+  a{
+    color: black;
+  }
+}
+
+#page{
+  .logo{
+    img{
+      padding-top: 10px;
+    }
+  }
+  .button {
+      background-color: #D5D0CF;
+      font-family: 'Quicksand', sans-serif;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .button1 {
+      background-color: #D5D0CF;
+      font-family: 'Quicksand', sans-serif;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+}
+
+.item1 {
+  grid-area: Logo;
+  background-color: #ffffff;
+  border-bottom: 3px solid #D5D0CF;
+}
+.item2 {
+  grid-area: Title;
+  background-color: #ffffff;
+  border-bottom: 3px solid #D5D0CF;
+}
+.item3 {
+  grid-area: Navigation;
+  background-color: #ffffff;
+  border-bottom: 3px solid #D5D0CF;
+}
+
+
+@media only screen and (max-width: 699px) {
+  .item1, .item2, .item3 {
+    min-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.item4 {
+  grid-area: Content;
+  width: 90%;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.error{
+  background-color: #D5D0CF;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.item5 {
+  grid-area: Content;
+  width: 90%;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'Logo Logo Logo'
+    'Title Title Title'
+    'Navigation Navigation Navigation'
+    'Content Content Content';
+  }
+.grid-container > div {
+  text-align: center;
+  padding: 0px;
+  font-size: 30px;
+}
+// Navigation
+a {
+   text-decoration: none;
+}
+
+nav .active{
+    font-weight: bolder;
+}
+
+nav {
+  overflow: hidden;
+  width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 4px 0px 4px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 100%;
+}
+.left{
+  a{
+    font-size: 15px;
+    color: #000000;
+    text-decoration: underline;
+  }
+}
+
+center{
+  font-size: 16px;
+  a{
+    color: black;
+  }
+}
+
+.small {
+  font-size: 14px;
+  a{
+    color: black;
+  }
+}
+
+.skinny {
+  max-width: 700px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0% 6% 0% 6%;
+}
+
+.map{
+  width:100%;
+  height:210px;
+}
+
+p{
+  font-size: 14px;
+    text-align: left;
+}
+h1{
+  font-size: 20px;
+}
+h2{
+  font-size: 18px;
+}
+h3{
+  font-size: 16px;
+  font-weight: bolder;
+}
+h4{
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: left;
+}
+h5{
+  font-size: 16px;
+  font-weight: bolder;
+  padding-top: 20%;
+}
+h6{
+  font-size: 14px;
+  font-weight: bolder;
+  padding-top: 20%;
+}
+
+.team{
+  max-width: 340px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color:#D5D0CF;
+  img{
+    padding: 5% 0px 0px 0px;
+  }
+  p{
+    text-align: left;
+  }
+  h4{
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 6%;
+  }
+}
+
+// Price List Table
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+// Title
+th{
+    // border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+}
+// Table Content
+td{
+    // border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    b{
+      font-size: 14px;
+    }
+}
+
+
+// Footer
+footer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  clear: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 5px;
+  .social{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  a{
+    padding-top: 5px;
+    color: #000000;
+  }
+
+
+  div.gallery img {
+      width: 100%;
+      height: auto;
+  }
+  * {
+      box-sizing: border-box;
+  }
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .responsive {
+      width: 100%;
+      padding: 5px 0px 5px 0px;
+    }
+}
+
+// -----
+//Tablet View
+// -----
+@media only screen and (min-width: 700px) and (max-width: 1050px) {
+  // Navigation Style
+  nav {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  // Style the links inside the navigation bar
+  nav a {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    width:20%;
+  }
+
+
+  .item1 {
+    margin-left: 7.4vw;
+    .logo img {
+      margin-left: 2vh;
+    }
+  }
+  .item2 {
+    margin-right: 7.4vw;
+    nav {
+      margin-right: 4vh;
+    }
+  }
+  .item3 {
+      margin-left: 7.4vw;
+      margin-right: 7.4vw;
+  }
+
+  .item4 {
+    grid-area: Content;
+    width: 85%;
+    background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+    .left {
+      padding-left: 20%;
+      width: 25%;
+    }
+    .middle {
+      padding-right: 20%;
+      width: 35%;
+    }
+  }
+
+  .item5 {
+    grid-area: Content;
+    width: 85%;
+    background-color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+  }
+
+  h3 { text-align: center;}
+
+  .gap{
+    display: block;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page .button {
+      display: none;
+  }
+  .button1 {
+      background-color: #D5D0CF;
+      font-family: 'Quicksand', sans-serif;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+
+  .home{
+    width: 80%;
+    text-align: justify;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'Logo Title Title'
+      'Navigation Navigation Navigation'
+      'Content Content Content';
+    }
+    h1{
+      font-size: 24px;
+      padding-top: 20px;
+    }
+
+    // Whole 3 colomns
+    .row{
+
+    }
+    /* Create three columns that floats next to each other */
+    .column {
+      float: left;
+      height: 300px;
+    }
+    .left{
+      width: 30%;
+      padding-left: 25%;
+      text-align: left;
+      // background-color:#aaa;
+      a{
+        font-size: 15px;
+        color: #000000;
+        text-decoration: underline;
+      }
+    }
+    .middle{
+      width: 30%;
+      padding-right: 15%;
+      text-align: left;
+      // background-color:#bbb;
+
+    }
+    .right{
+      width: 100%;
+    }
+
+    // Price List
+    .row1{
+      width: 100%;
+    }
+    .column1{
+        float: left;
+        max-height: 4000px;
+    }
+    .beauty{
+      width: 50%;
+    }
+    .hair{
+      width: 50%;
+    }
+    center{
+      font-size: 16px;
+    }
+
+    .map{
+      width:80%;
+      height:300px;
+    }
+
+    .responsive {
+      float: left;
+      width: 49.9999%;
+      padding: 5px 0px 5px 0px;
+    }
+    .team{
+      text-align: center;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color:#D5D0CF;
+      height: 320px;
+      padding-right: 20px;
+      img{
+        padding: 20px 20px 20px 20px;
+        float:left;
+        display: block;
+      }
+      p{
+        text-align: left;
+        padding-left: 325px;
+        padding-right: 15px;
+      }
+      h4{
+        font-size: 16px;
+        font-weight: bolder;
+        text-align: left;
+        padding-top: 30px;
+      }
+    }
+    .skinny {
+      max-width: 700px;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px 20px 0px 20px;
+    }
+
+    // Price List Table
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    // Title
+    th{
+        text-align: left;
+        padding: 8px;
+        font-size: 16px;
+    }
+    // Table Content
+    td{
+        text-align: left;
+        padding: 8px;
+        font-size: 15px;
+        b{
+          font-size: 15px;
+        }
+    }
+
+    footer{
+      width: 85%;
+    }
+}
+//Desktop View
+@media only screen and (min-width: 1050px){
+#page{
+  .logo{
+    img:hover{
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+    }
+  }
+  .gap{
+    display: block;
+    padding-bottom: 65px;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item1 {
+    margin-left: 12.4vw;
+    .logo img {
+      margin-left: 2vh;
+    }
+  }
+  .item3 {
+    margin-right: 12.4vw;
+    nav {
+      margin-right: 4vh;
+    }
+  }
+
+  .item4 {
+    max-width: 75%;
+  }
+
+  .item5 {
+    max-width: 75%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+
+  .button {
+      display: none;
+  }
+  .button1 {
+      background-color: #D5D0CF;
+      font-family: 'Quicksand', sans-serif;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .button1:hover{
+    background-color: #aca1a0;
+  }
+}
+  // Navigation Style
+  nav {
+    padding-top: 25px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav .active{
+      font-weight: bolder;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 3px solid #D5D0CF;
+      margin-bottom: -1px;
+  }
+  // Style the links inside the navigation bar
+  nav a {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    font-size: 20px;
+    width: 20%;
+  }
+  nav a:hover{
+    font-weight: bolder;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 3px solid #D5D0CF;
+    margin-bottom: -1px;
+  }
+
+  .home{
+    width: 80%;
+    text-align: justify;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'Logo Title Title Navigation Navigation Navigation Navigation Navigation'
+    'Content Content Content Content Content Content Content Content'
+  }
+
+  // .grid-container1 {
+  //   padding-left: 10%;
+  //   display: grid;
+  //   grid-template-areas:
+  //     'One Two Three Four'
+  //     'One Two Three Four';
+  // }
+
+  h1{
+    font-size: 24px;
+    padding-top: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+
+  // Whole 3 colomns
+  .row{
+
+  }
+  /* Create three columns that floats next to each other */
+  .column {
+    float: left;
+    height: 300px;
+
+  }
+  .left{
+    width: 33.3333%;
+    // background-color:#aaa;
+    a{
+      font-size: 15px;
+      color: #000000;
+      text-decoration: underline;
+    }
+    a:hover{
+        font-weight: bolder;
+
+    }
+  }
+  .middle{
+    width: 33.3333%;
+    // background-color:#bbb;
+  }
+  .right{
+    width: 33.33333%;
+    // background-color:#ccc;
+  }
+  // Price List
+  .row1{
+    // width: 100%;
+    // padding-left: 5%;
+    width: 100%;
+  }
+  .column1{
+      float: left;
+      max-height: 4000px;
+  }
+  .beauty{
+    width: 50%;
+  }
+  .hair{
+    width: 50%;
+  }
+  center{
+    font-size: 16px;
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+
+  .map{
+    width:90%;
+    height:300px;
+  }
+
+  // Price List Table
+  table {
+      border-collapse: collapse;
+      width: 70%;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  // Title
+  th{
+      text-align: left;
+      padding: 8px;
+      font-size: 16px;
+  }
+  // Table Content
+  td{
+      text-align: left;
+      padding: 8px;
+      font-size: 15px;
+      b{
+        font-size: 15px;
+      }
+  }
+
+  footer{
+    width: 75%;
+    img:hover{
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .responsive {
+    float: left;
+    width: 33.33333333%;
+    padding: 5px 2px 5px 2px;
+  }
+
+  .team{
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#D5D0CF;
+    height: 300px;
+    padding-right: 20px;
+    img{
+      padding: 20px 20px 20px 20px;
+      float:left;
+      display: block;
+    }
+    p{
+      text-align: left;
+      padding-left: 325px;
+      padding-right: 15px;
+    }
+    h4{
+      font-size: 16px;
+      font-weight: bolder;
+      text-align: left;
+      padding-top: 30px;
+    }
+  }
+}
